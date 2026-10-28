@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Keyta support</title>
+<meta name="description" content="Help with Keyta and Keyta Server: finding your server, watching away from home, the TMDB key, and how to contact us.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html">Keyta</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="server.html">Keyta Server</a></li>
+    <li><a href="support.html" aria-current="page">Support</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main"><div class="wrap">
+  <h1>Keyta support</h1>
+  <p class="lead">Most problems are about the app finding your server. Start with the questions below.</p>
+
+  <h2>Contact us</h2>
+  <p>Email: <a href="mailto:keytasupport@gmail.com">keytasupport@gmail.com</a></p>
+  <p>Please tell us which device you use (iPhone, iPad, Mac or Apple TV), your version of Keyta and of Keyta Server, and whether the server runs on Windows or Mac. Do not send us your server token or your TMDB key.</p>
+
+  <h2>Questions</h2>
+
+  <details>
+    <summary>Keyta says it can&rsquo;t find my server</summary>
+    <ol>
+      <li>Check that <a href="server.html">Keyta Server</a> is running on your computer. Look for its icon in the Windows notification area or the Mac menu bar, and choose <strong>Open Keyta Setup</strong>. If the page opens, the server is up.</li>
+      <li>Make sure your device and the computer are on the <strong>same Wi-Fi or network</strong>. Guest networks and some mesh or router settings (&ldquo;client isolation&rdquo;) stop devices seeing each other. A VPN on the device can also get in the way, so try turning it off.</li>
+      <li>Allow <strong>Local Network</strong> access to Keyta. On iPhone and iPad: Settings, Privacy &amp; Security, Local Network, then switch Keyta on. On Mac, also allow it for Keyta Server in System Settings, Privacy &amp; Security.</li>
+      <li>On Windows, the firewall must allow Keyta Server on private networks (ports 8097 and 8497). The installer offers to add the rules. If you skipped them, run the installer again, or allow the app when Windows asks. Your network must be set to <strong>Private</strong>, not Public.</li>
+      <li>Make sure the computer is awake. A sleeping computer cannot be found.</li>
+      <li>Still no luck? Enter the address by hand. The setup page shows your computer&rsquo;s address in large type at the top. In Keyta, choose to add a server by address and type it in (it looks like <code>192.168.1.20:8097</code>).</li>
+    </ol>
+  </details>
+
+  <details>
+    <summary>My device found the server but won&rsquo;t connect</summary>
+    <p>The first time, you must approve the device on the setup page on the computer: compare the 4-digit code shown on the device with the one on the page, then choose <strong>Approve</strong>. The setup page opens only on the computer that runs Keyta Server.</p>
+  </details>
+
+  <details>
+    <summary>How do I watch away from home?</summary>
+    <p>Playing away from home is part of <a href="terms.html">Keyta Plus</a>. Your server needs to be reachable from the internet:</p>
+    <ol>
+      <li>On the setup page, open the <strong>Sharing</strong> section and switch on remote access.</li>
+      <li>Keyta Server asks your router to open its port automatically (NAT-PMP or UPnP). If it works, the page shows the status as mapped, with your public address.</li>
+      <li>If the router refuses, forward the port by hand: in your router&rsquo;s settings, forward the <strong>TCP</strong> port shown on the setup page (the secure remote port, <code>8497</code> by default) to your computer&rsquo;s address on your home network, then choose manual mode in Sharing. Give the computer a fixed address on the router first, so the forward keeps working.</li>
+      <li>Some internet providers put many customers behind one shared address (CGNAT) or block incoming connections. In that case port forwarding cannot work. Ask your provider for a public address.</li>
+    </ol>
+    <p>Friends you invite play your library, home or away, with a single-use invite link valid for 7 days. Creating invites is part of Keyta Plus.</p>
+  </details>
+
+  <details>
+    <summary>How do I get a TMDB key?</summary>
+    <p>Keyta Server uses a free key from TMDB (The Movie Database) to show posters and descriptions. It is free for personal use.</p>
+    <ol>
+      <li>Create a free account at <a href="https://www.themoviedb.org/signup">themoviedb.org/signup</a> and confirm your email.</li>
+      <li>Open <a href="https://www.themoviedb.org/settings/api">themoviedb.org/settings/api</a> (or click your picture, then Settings, then API).</li>
+      <li>Choose <strong>Create</strong> (or <strong>Request an API Key</strong>), then <strong>Developer</strong>, and accept the terms.</li>
+      <li>On the form, set the type of use to <strong>Personal</strong>, and give any application name, a web address such as <code>http://localhost</code> and a one-line summary.</li>
+      <li>Copy the <strong>API Read Access Token</strong> (the long one) or the <strong>API Key</strong> (32 characters). Paste it into the TMDB step on the setup page and choose <strong>Check and save</strong>.</li>
+    </ol>
+    <p>The key stays on your computer and is not shown again after saving. Your devices use the server&rsquo;s key automatically.</p>
+  </details>
+
+  <details>
+    <summary>Posters and descriptions are missing</summary>
+    <p>This almost always means the TMDB key is missing or wrong. Open the setup page, go to the TMDB step and use <strong>Check and save</strong> with a fresh key (see above).</p>
+  </details>
+
+  <details>
+    <summary>I bought Keyta Plus but it isn&rsquo;t active</summary>
+    <p>In Keyta, open Settings, then Keyta Plus, and choose <strong>Restore Purchases</strong>. Make sure you are signed in to the same Apple account you bought with. Plus belongs to your Apple account, not to a Keyta account. See the <a href="terms.html">subscription terms</a> to cancel or manage it.</p>
+  </details>
+
+  <details>
+    <summary>Will it work on Apple TV and Mac?</summary>
+    <p>Yes. Keyta runs on iPhone, iPad, Mac and Apple TV. Google Cast is available on iPhone and iPad only, and joining a friend&rsquo;s server with an invite link is not available on Apple TV.</p>
+  </details>
+
+  <details>
+    <summary>Where is my data, and how do I delete it?</summary>
+    <p>On your own server and your own devices. See the <a href="privacy.html">privacy policy</a>.</p>
+  </details>
+
+  <details>
+    <summary>Windows or macOS warns me when I open Keyta Server</summary>
+    <p>Keyta Server is not yet signed with a paid certificate, so Windows SmartScreen and macOS Gatekeeper warn about it. Follow the steps on the <a href="server.html">Keyta Server page</a> (More info, then Run anyway on Windows; right-click, then Open on Mac).</p>
+  </details>
+</div></main>
+
+<footer class="site"><div class="wrap">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="server.html">Keyta Server</a></li>
+    <li><a href="privacy.html">Privacy policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</div></footer>
+</body>
+</html>
