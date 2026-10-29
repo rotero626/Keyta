@@ -14,7 +14,7 @@ Search the folder for `TODO(Alex)` and fix every one (support email, download li
 
 1. Sign in at github.com. Choose **New repository**.
 2. Name it. Two good choices:
-   - `keyta` (URL will be `https://rotero626.github.io/keyta/`), or
+   - `keyta` (URL will be `https://rotero626.github.io/Keyta/`), or
    - `rotero626.github.io` (URL will be `https://rotero626.github.io/`, shorter).
    Set it to **Public** (free Pages needs a public repo). Create it.
 3. Upload the **contents** of the `Site` folder (not the folder itself): on the new repo page choose **uploading an existing file**, drag in all the files, including `.nojekyll` (hidden files may need Finder's Cmd-Shift-. to show), and **Commit changes** to `main`. `index.html` must be at the top level of the repo.
@@ -30,13 +30,13 @@ If the repo is `keyta` (replace `rotero626`; for a `rotero626.github.io` repo dr
 
 | Where | Value |
 |---|---|
-| `KeytaLinks.serverDownload` | `https://rotero626.github.io/keyta/server.html` |
-| `KeytaLinks.privacyPolicy` | `https://rotero626.github.io/keyta/privacy.html` |
-| `KeytaLinks.support` | `https://rotero626.github.io/keyta/support.html` |
-| `KeytaLinks.termsOfUse` | leave as Apple's EULA (already set), or `https://rotero626.github.io/keyta/terms.html` |
-| App Store Connect: Privacy Policy URL | `https://rotero626.github.io/keyta/privacy.html` |
-| App Store Connect: Support URL | `https://rotero626.github.io/keyta/support.html` |
-| App Store Connect: Marketing URL | `https://rotero626.github.io/keyta/` |
+| `KeytaLinks.serverDownload` | `https://rotero626.github.io/Keyta/server.html` |
+| `KeytaLinks.privacyPolicy` | `https://rotero626.github.io/Keyta/privacy.html` |
+| `KeytaLinks.support` | `https://rotero626.github.io/Keyta/support.html` |
+| `KeytaLinks.termsOfUse` | leave as Apple's EULA (already set), or `https://rotero626.github.io/Keyta/terms.html` |
+| App Store Connect: Privacy Policy URL | `https://rotero626.github.io/Keyta/privacy.html` |
+| App Store Connect: Support URL | `https://rotero626.github.io/Keyta/support.html` |
+| App Store Connect: Marketing URL | `https://rotero626.github.io/Keyta/` |
 | App Store Connect: Terms (EULA) | leave on Apple's standard EULA; if the Description or a Terms field asks for a link, use the Apple EULA URL |
 | Subscription pages (App Store Connect) | Privacy Policy URL as above |
 
