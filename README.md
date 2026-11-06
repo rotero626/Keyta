@@ -2,6 +2,8 @@
 
 Plain HTML and CSS. No build step, no scripts, no cookies, no external fonts. Open `index.html` in a browser to preview.
 
+Current Keyta Server release: **0.2.0** (Windows installer and ZIP, signed and notarised Mac disk image; see the Releases page for notes and checksums).
+
 Files: `index.html`, `server.html`, `privacy.html`, `support.html`, `terms.html`, `style.css`, `.nojekyll`.
 
 ## Before you publish
